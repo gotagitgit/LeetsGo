@@ -18,9 +18,9 @@ internal class Program
 
         //MergeSortedLinkedList.Run();
 
-        //BstDemo.Run();
+        BstDemo.Run();
 
-        LinkedListDemo.Run();
+        //LinkedListDemo.Run();
 
         Console.ReadLine();
     }    

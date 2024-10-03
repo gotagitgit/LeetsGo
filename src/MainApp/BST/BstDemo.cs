@@ -1,4 +1,4 @@
-﻿using DataStruct.BST;
+﻿using DataStruct.Searches.BST;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,12 +21,11 @@ internal class BstDemo
         bst.Insert(new Node(7));
         bst.Insert(new Node(5));
 
-
         var values = bst.GetTreeValues();
 
         Console.WriteLine(string.Join(" -> ", values));
 
-        bst.Delete(61);
+        //bst.Delete(61);
 
         var newValuesAfterDelete = bst.GetTreeValues();
 

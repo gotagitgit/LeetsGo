@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.AccessControl;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DataStruct.BST;
+﻿namespace DataStruct.Searches.BST;
 
 public class BinarySearchTree
 {
@@ -61,7 +54,7 @@ public class BinarySearchTree
             node = node.RightNode;
         }
 
-        return node.Value;  
+        return node.Value;
     }
 
     // Find the node on the right side of root with the least value
@@ -69,7 +62,7 @@ public class BinarySearchTree
     {
         // right node becomes the root node by default
         node = node.RightNode;
-        
+
         // If left node has value then that becomes the root
         while (node.LeftNode != null)
         {
@@ -91,19 +84,19 @@ public class BinarySearchTree
     public bool Search(int value)
     {
         return SearchNodes(Root, value);
-    }    
+    }
 
     private bool SearchNodes(Node node, int value)
     {
         if (node == null)
-            return false;        
+            return false;
         else if (node.Value == value)
             return true;
         else if (value > node.Value)
             return SearchNodes(node.RightNode, value);
         else if (value < node.Value)
             return SearchNodes(node.LeftNode, value);
-        
+
         return false;
     }
 
@@ -114,8 +107,8 @@ public class BinarySearchTree
             root = node;
 
             return root;
-        }           
-        else if (node.Value <  root.Value)
+        }
+        else if (node.Value < root.Value)
         {
             root.LeftNode = InsertNode(root.LeftNode, node);
         }
