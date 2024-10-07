@@ -1,6 +1,7 @@
 ﻿using MainApp.Arrays;
 using MainApp.BST;
 using MainApp.LinkedLists;
+using MainApp.Matrix;
 using MainApp.Sequences;
 using MainApp.Sorting;
 
@@ -18,9 +19,11 @@ internal class Program
 
         //MergeSortedLinkedList.Run();
 
-        BstDemo.Run();
+        ////BstDemo.Run();
 
         //LinkedListDemo.Run();
+
+        AdjacencyMatrix.Run();
 
         Console.ReadLine();
     }    
